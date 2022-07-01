@@ -4,12 +4,6 @@
 
 using namespace std;
 
-/*
-
- * Node Declaration
-
- */
-
 struct node
 
 {
@@ -22,13 +16,6 @@ struct node
 
 }*root;
 
- 
-
-/*
-
- * Class Declaration
-
- */
 
 class BST
 
@@ -66,11 +53,7 @@ class BST
 
 };
 
-/*
 
- * Main Contains Menu
-
- */
 
 int main()
 
@@ -200,12 +183,9 @@ int main()
 
  
 
-/*
+// Find Element in the Tree
 
- * Find Element in the Tree
-
- */
-
+ 
 void BST::find(int item, node **par, node **loc)
 
 {
@@ -281,12 +261,8 @@ void BST::find(int item, node **par, node **loc)
 }
 
  
+// Inserting Element into the Tree
 
-/*
-
- * Inserting Element into the Tree
-
- */
 
 void BST::insert(node *tree, node *newnode)
 
@@ -384,11 +360,7 @@ void BST::insert(node *tree, node *newnode)
 
  
 
-/*
-
- * Delete Element from the tree
-
- */
+// Delete Element from the tree
 
 void BST::del(int item)
 
@@ -440,11 +412,6 @@ void BST::del(int item)
 
  
 
-/*
-
- * Case A
-
- */
 
 void BST::case_a(node *par, node *loc )
 
@@ -476,11 +443,6 @@ void BST::case_a(node *par, node *loc )
 
  
 
-/*
-
- * Case B
-
- */
 
 void BST::case_b(node *par, node *loc)
 
@@ -520,13 +482,7 @@ void BST::case_b(node *par, node *loc)
 
 }
 
- 
 
-/*
-
- * Case C
-
- */
 
 void BST::case_c(node *par, node *loc)
 
@@ -590,11 +546,9 @@ void BST::case_c(node *par, node *loc)
 
  
 
-/*
+// Pre Order Traversal
 
- * Pre Order Traversal
-
- */
+ 
 
 void BST::preorder(node *ptr)
 
@@ -624,11 +578,8 @@ void BST::preorder(node *ptr)
 
 }
 
-/*
+//In Order Traversal
 
- * In Order Traversal
-
- */
 
 void BST::inorder(node *ptr)
 
@@ -658,13 +609,9 @@ void BST::inorder(node *ptr)
 
 }
 
- 
+ //Postorder Traversal
 
-/*
 
- * Postorder Traversal
-
- */
 
 void BST::postorder(node *ptr)
 
@@ -694,13 +641,9 @@ void BST::postorder(node *ptr)
 
 }
 
- 
 
-/*
+ //Display Tree Structure
 
- * Display Tree Structure
-
- */
 
 void BST::display(node *ptr, int level)
 
