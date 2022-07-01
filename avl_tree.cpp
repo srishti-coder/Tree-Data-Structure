@@ -10,13 +10,7 @@
 
 using namespace std;
 
- 
-
-/*
-
- * Node Declaration
-
- */
+//Here I declare nodes
 
 struct avl_node
 
@@ -31,12 +25,7 @@ struct avl_node
 }*root;
 
  
-
-/*
-
- * Class Declaration
-
- */
+//Here I declared class
 
 class avlTree
 
@@ -80,11 +69,7 @@ class avlTree
 
  
 
-/*
 
- * Main Contains Menu
-
- */
 
 int main()
 
@@ -202,12 +187,9 @@ int main()
 
  
 
-/*
+ // Height of AVL Tree
 
- * Height of AVL Tree
-
- */
-
+ 
 int avlTree::height(avl_node *temp)
 
 {
@@ -234,11 +216,7 @@ int avlTree::height(avl_node *temp)
 
  
 
-/*
-
- * Height Difference 
-
- */
+//Height Difference 
 
 int avlTree::diff(avl_node *temp)
 
@@ -256,11 +234,9 @@ int avlTree::diff(avl_node *temp)
 
  
 
-/*
+//Right- Right Rotation
 
- * Right- Right Rotation
 
- */
 
 avl_node *avlTree::rr_rotation(avl_node *parent)
 
@@ -278,11 +254,10 @@ avl_node *avlTree::rr_rotation(avl_node *parent)
 
 }
 
-/*
 
- * Left- Left Rotation
 
- */
+ *//Left- Left Rotation
+ 
 
 avl_node *avlTree::ll_rotation(avl_node *parent)
 
@@ -302,11 +277,11 @@ avl_node *avlTree::ll_rotation(avl_node *parent)
 
  
 
-/*
 
- * Left - Right Rotation
 
- */
+ // Left - Right Rotation
+
+
 
 avl_node *avlTree::lr_rotation(avl_node *parent)
 
@@ -324,11 +299,7 @@ avl_node *avlTree::lr_rotation(avl_node *parent)
 
  
 
-/*
-
- * Right- Left Rotation
-
- */
+// Right- Left Rotation
 
 avl_node *avlTree::rl_rotation(avl_node *parent)
 
@@ -346,11 +317,8 @@ avl_node *avlTree::rl_rotation(avl_node *parent)
 
  
 
-/*
+ // Balancing AVL Tree
 
- * Balancing AVL Tree
-
- */
 
 avl_node *avlTree::balance(avl_node *temp)
 
@@ -390,13 +358,9 @@ avl_node *avlTree::balance(avl_node *temp)
 
 }
 
- 
 
-/*
+ // Insert Element into the tree
 
- * Insert Element into the tree
-
- */
 
 avl_node *avlTree::insert(avl_node *root, int value)
 
@@ -442,13 +406,11 @@ avl_node *avlTree::insert(avl_node *root, int value)
 
 }
 
- 
 
-/*
 
- * Display AVL Tree
+ // Display AVL Tree
 
- */
+
 
 void avlTree::display(avl_node *ptr, int level)
 
@@ -480,13 +442,10 @@ void avlTree::display(avl_node *ptr, int level)
 
 }
 
- 
 
-/*
 
- * Inorder Traversal of AVL Tree
+ // Inorder Traversal of AVL Tree
 
- */
 
 void avlTree::inorder(avl_node *tree)
 
@@ -504,11 +463,8 @@ void avlTree::inorder(avl_node *tree)
 
 }
 
-/*
+ // Preorder Traversal of AVL Tree
 
- * Preorder Traversal of AVL Tree
-
- */
 
 void avlTree::preorder(avl_node *tree)
 
@@ -528,13 +484,10 @@ void avlTree::preorder(avl_node *tree)
 
 }
 
- 
 
-/*
 
- * Postorder Traversal of AVL Tree
+ // Postorder Traversal of AVL Tree
 
- */
 
 void avlTree::postorder(avl_node *tree)
 
